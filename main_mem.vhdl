@@ -54,13 +54,16 @@ architecture STORAGE of MAIN_MEM is
         -- Mapeamento Registrador Endereço (REM MAR)
         U_REG_REM : REG_8B port map(S_MUX_2_REM, CLK, '1', RST, REM_NRW, S_REM_2_MEM);
 
-        -- Mapeamento Memoria Interna
+        -- Mapeamento Memoria RAM Interna
         U_INNER_MEM : INNER_MEM port map(S_REM_2_MEM, S_MEM_2_RDM, MEM_NRW, RST);
 
         -- Mapeamento Registrador Dados (RDM MBR)
         U_REG_RDM : REG_8B port map(S_MEM_2_RDM, CLK, '1', RST, RDM_NRW, S_RDM_2_BUS);
 
         -- Trap Killer (MUX Especial)
+        -- READ: memória → RDM
         MEM_BUS <= S_RDM_2_BUS when MEM_NRW = '0' else (others => 'Z');
+        -- WRITE: RDM → barramento → memória
         S_MEM_2_RDM <= MEM_BUS when MEM_NRW = '1' else (others => 'Z');
+
 end architecture STORAGE;

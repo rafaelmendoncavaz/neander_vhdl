@@ -16,12 +16,12 @@ end entity INNER_MEM;
 architecture BEHAVIOR of INNER_MEM is
 	type ram_type is array (0 to 255) of std_logic_vector(7 downto 0);
 	signal ram : ram_type;
-	signal data_out : std_logic_vector(7 downto 0);
+	signal DATA_OUT : std_logic_vector(7 downto 0);
 begin
 	
 	rampW : process(NR_W, RST, ADDR, DATA)
 	type binary_file is file of character;
-	file load_file : binary_file open read_mode is "neanderram.mem";
+	file load_file : binary_file open read_mode is "neanderram-ex01.mem";
 	variable char : character;
 	begin
 		if (RST = '0' and RST'event) then
@@ -34,7 +34,7 @@ begin
 				if not endfile(load_file) then
 						read(load_file, char);
 						ram(i) <= std_logic_vector(to_unsigned(character'pos(char),8));
-						read(load_file, char);	-- 0x00 orindo de alinhamento 16bits	
+						read(load_file, char);	-- 0x00 oriundo de alinhamento 16bits	
 				end if; -- if not endfile(load_file) then
 			end loop; -- for i in 0 to 255
         else
@@ -45,14 +45,14 @@ begin
 		end if; -- RST == '0'
 	end process rampW;
 
-	DATA <= data_out when (RST = '1' and NR_W = '0')
+	DATA <= DATA_OUT when (RST = '1' and NR_W = '0')
 		  else (others => 'Z');
 
 	rampR : process(NR_W, RST, ADDR, DATA)
 	begin
 		if (RST = '1' and NR_W = '0') then
 				-- Read
-				data_out <= ram(to_integer(unsigned(ADDR)));
+				DATA_OUT <= ram(to_integer(unsigned(ADDR)));
 		end if; -- RST = '1' and NR_W = '0'
 	end process rampR;
 end architecture BEHAVIOR;

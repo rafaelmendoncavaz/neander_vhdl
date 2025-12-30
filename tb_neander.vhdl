@@ -30,24 +30,6 @@ begin
         wait for CLK_PERIOD;
         RST <= '1';
 
-        wait for CLK_PERIOD;
-
-        RST <= '0';
-        wait for CLK_PERIOD;
-        RST <= '1';
-
-        wait for CLK_PERIOD;
-
-        RST <= '0';
-        wait for CLK_PERIOD;
-        RST <= '1';
-
-        wait for CLK_PERIOD;
-
-        RST <= '0';
-        wait for CLK_PERIOD;
-        RST <= '1';
-
         wait;
 
     end process NEANDER;

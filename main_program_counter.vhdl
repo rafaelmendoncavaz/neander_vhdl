@@ -36,16 +36,19 @@ architecture COUNTER of MAIN_PROGRAM_COUNTER is
 
     -- Sinais:
     -- S_ADD -> Resultador Somador
+    signal S_ADD        : std_logic_vector(7 downto 0);
     -- S_MUX_2_PC -> Saida Mux -> Registrador PC
+    signal S_MUX_2_PC   : std_logic_vector(7 downto 0);
     -- S_CURR_PC -> Saida valor atual Registrador PC
+    signal S_CURR_PC    : std_logic_vector(7 downto 0);
     -- S_PC_2_MEM -> Valor recebido pelo Modulo Memória
-    signal S_ADD, S_MUX_2_PC, S_CURR_PC, S_PC_2_MEM : std_logic_vector(7 downto 0);
+    signal S_PC_2_MEM   : std_logic_vector(7 downto 0);
     -- Sinal Carry Out Somador
     signal S_COUT   : std_logic;
 
     begin
         -- Mapeamento Somador 8 bits
-        U_ADD       : ADDER_8B port map(x"01", S_CURR_PC, '0', S_COUT, S_ADD);
+        U_ADD       : ADDER_8B port map("00000001", S_CURR_PC, '0', S_COUT, S_ADD);
         
         -- Mux que controla valor recebido pelo Registrador PC:
         -- 0 envia dados do Barramento
@@ -55,7 +58,10 @@ architecture COUNTER of MAIN_PROGRAM_COUNTER is
         -- Mapeamento Registrador PC
         U_PC_RIP    : REG_8B port map(S_MUX_2_PC, CLK, '1', RST, PC_NRW, S_PC_2_MEM);
         
+        -- Incremento de Endereço no Somador
+        S_CURR_PC   <= S_PC_2_MEM;
+
         -- Saida "Address" para Memoria
-        S_CURR_PC <= S_PC_2_MEM;
+        PC_OUT      <= S_PC_2_MEM;
 
 end architecture COUNTER;

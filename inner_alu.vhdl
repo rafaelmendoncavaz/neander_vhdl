@@ -71,6 +71,6 @@ architecture BEHAVIOR of INNER_ALU is
         FLAG_NZ(1)  <= S_RESULT(7);
 
         -- Checagem se o número é igual a zero
-        FLAG_NZ(0)  <= '1' when S_RESULT = x"00" else '0';
+        FLAG_NZ(0)  <= '1' when S_RESULT = "00000000" else '0';
 
 end architecture BEHAVIOR;

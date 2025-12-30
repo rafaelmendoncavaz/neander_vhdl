@@ -129,7 +129,7 @@ architecture INSTR_CONTROLLER of INNER_CONTROLLER is
 
     begin
         -- Mapeamento Contador
-        U_COUNTER   : COUNTER port map(CLK, '1', CL, S_CYCLE); 
+        U_COUNTER   : COUNTER port map(CLK, PR, CL, S_CYCLE); 
 
         -- Mapeamento LDA
         U_LDA       : CU_LDA port map(S_CYCLE, S_LDA);
