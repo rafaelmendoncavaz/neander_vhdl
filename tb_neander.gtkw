@@ -1,20 +1,20 @@
 [*]
 [*] GTKWave Analyzer v3.3.116 (w)1999-2023 BSI
-[*] Mon Jan  5 12:35:04 2026
+[*] Wed Jan  7 12:22:03 2026
 [*]
 [dumpfile] "/home/rafael/Desktop/unioeste/cc/ano-1/sd/aula-vhdl/neander/tb_neander.ghw"
-[dumpfile_mtime] "Mon Jan  5 12:29:52 2026"
-[dumpfile_size] 53652
+[dumpfile_mtime] "Wed Jan  7 11:59:28 2026"
+[dumpfile_size] 276668
 [savefile] "/home/rafael/Desktop/unioeste/cc/ano-1/sd/aula-vhdl/neander/tb_neander.gtkw"
 [timestart] 0
 [size] 1920 1009
 [pos] -1 -1
-*-27.163998 80400000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-27.163998 569900000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] top.
 [sst_width] 260
 [signals_width] 300
 [sst_expanded] 1
-[sst_vpaned_height] 454
+[sst_vpaned_height] 308
 @28
 top.tb_neander.clk
 top.tb_neander.rst
@@ -33,6 +33,7 @@ top.tb_neander.u_neander.u_alu_2_mem.mem_nrw
 top.tb_neander.u_neander.u_mem_2_alu.rdm_nrw
 top.tb_neander.u_neander.u_mem_2_alu.rem_nrw
 top.tb_neander.u_neander.u_mem_2_alu.n_bus_pc
+top.tb_neander.u_neander.u_pc_2_mem.n_bus_inc
 @200
 -sc-CONTROLE
 @28
@@ -45,20 +46,25 @@ top.tb_neander.u_neander.u_mem_2_alu.mem_nrw
 top.tb_neander.u_neander.u_alu_2_mem.ac_nrw
 @200
 -Valores
-@22
+@24
 #{top.tb_neander.u_neander.s_interface_bus[7:0]} top.tb_neander.u_neander.s_interface_bus[7] top.tb_neander.u_neander.s_interface_bus[6] top.tb_neander.u_neander.s_interface_bus[5] top.tb_neander.u_neander.s_interface_bus[4] top.tb_neander.u_neander.s_interface_bus[3] top.tb_neander.u_neander.s_interface_bus[2] top.tb_neander.u_neander.s_interface_bus[1] top.tb_neander.u_neander.s_interface_bus[0]
 #{top.tb_neander.u_neander.u_mem_2_alu.s_rem_2_mem[7:0]} top.tb_neander.u_neander.u_mem_2_alu.s_rem_2_mem[7] top.tb_neander.u_neander.u_mem_2_alu.s_rem_2_mem[6] top.tb_neander.u_neander.u_mem_2_alu.s_rem_2_mem[5] top.tb_neander.u_neander.u_mem_2_alu.s_rem_2_mem[4] top.tb_neander.u_neander.u_mem_2_alu.s_rem_2_mem[3] top.tb_neander.u_neander.u_mem_2_alu.s_rem_2_mem[2] top.tb_neander.u_neander.u_mem_2_alu.s_rem_2_mem[1] top.tb_neander.u_neander.u_mem_2_alu.s_rem_2_mem[0]
-@24
 #{top.tb_neander.u_neander.u_alu_2_mem.s_ac_2_ula[7:0]} top.tb_neander.u_neander.u_alu_2_mem.s_ac_2_ula[7] top.tb_neander.u_neander.u_alu_2_mem.s_ac_2_ula[6] top.tb_neander.u_neander.u_alu_2_mem.s_ac_2_ula[5] top.tb_neander.u_neander.u_alu_2_mem.s_ac_2_ula[4] top.tb_neander.u_neander.u_alu_2_mem.s_ac_2_ula[3] top.tb_neander.u_neander.u_alu_2_mem.s_ac_2_ula[2] top.tb_neander.u_neander.u_alu_2_mem.s_ac_2_ula[1] top.tb_neander.u_neander.u_alu_2_mem.s_ac_2_ula[0]
 @28
 #{top.tb_neander.u_neander.u_alu_2_mem.alu_flags[1:0]} top.tb_neander.u_neander.u_alu_2_mem.alu_flags[1] top.tb_neander.u_neander.u_alu_2_mem.alu_flags[0]
+@29
 #{top.tb_neander.u_neander.u_alu_2_mem.alu_op[2:0]} top.tb_neander.u_neander.u_alu_2_mem.alu_op[2] top.tb_neander.u_neander.u_alu_2_mem.alu_op[1] top.tb_neander.u_neander.u_alu_2_mem.alu_op[0]
+@24
 #{top.tb_neander.u_neander.u_pc_alu_2_sys.s_reg_2_dec[7:0]} top.tb_neander.u_neander.u_pc_alu_2_sys.s_reg_2_dec[7] top.tb_neander.u_neander.u_pc_alu_2_sys.s_reg_2_dec[6] top.tb_neander.u_neander.u_pc_alu_2_sys.s_reg_2_dec[5] top.tb_neander.u_neander.u_pc_alu_2_sys.s_reg_2_dec[4] top.tb_neander.u_neander.u_pc_alu_2_sys.s_reg_2_dec[3] top.tb_neander.u_neander.u_pc_alu_2_sys.s_reg_2_dec[2] top.tb_neander.u_neander.u_pc_alu_2_sys.s_reg_2_dec[1] top.tb_neander.u_neander.u_pc_alu_2_sys.s_reg_2_dec[0]
+#{top.tb_neander.u_neander.u_pc_2_mem.s_curr_pc[7:0]} top.tb_neander.u_neander.u_pc_2_mem.s_curr_pc[7] top.tb_neander.u_neander.u_pc_2_mem.s_curr_pc[6] top.tb_neander.u_neander.u_pc_2_mem.s_curr_pc[5] top.tb_neander.u_neander.u_pc_2_mem.s_curr_pc[4] top.tb_neander.u_neander.u_pc_2_mem.s_curr_pc[3] top.tb_neander.u_neander.u_pc_2_mem.s_curr_pc[2] top.tb_neander.u_neander.u_pc_2_mem.s_curr_pc[1] top.tb_neander.u_neander.u_pc_2_mem.s_curr_pc[0]
 @200
 -Observadores
-@28
+@2028
+^3 /home/rafael/Desktop/unioeste/cc/ano-1/sd/aula-vhdl/neander/instr.txt
 #{top.tb_neander.u_neander.u_pc_alu_2_sys.u_decoder.instr_out[10:0]} top.tb_neander.u_neander.u_pc_alu_2_sys.u_decoder.instr_out[10] top.tb_neander.u_neander.u_pc_alu_2_sys.u_decoder.instr_out[9] top.tb_neander.u_neander.u_pc_alu_2_sys.u_decoder.instr_out[8] top.tb_neander.u_neander.u_pc_alu_2_sys.u_decoder.instr_out[7] top.tb_neander.u_neander.u_pc_alu_2_sys.u_decoder.instr_out[6] top.tb_neander.u_neander.u_pc_alu_2_sys.u_decoder.instr_out[5] top.tb_neander.u_neander.u_pc_alu_2_sys.u_decoder.instr_out[4] top.tb_neander.u_neander.u_pc_alu_2_sys.u_decoder.instr_out[3] top.tb_neander.u_neander.u_pc_alu_2_sys.u_decoder.instr_out[2] top.tb_neander.u_neander.u_pc_alu_2_sys.u_decoder.instr_out[1] top.tb_neander.u_neander.u_pc_alu_2_sys.u_decoder.instr_out[0]
+^1 /home/rafael/Desktop/unioeste/cc/ano-1/sd/aula-vhdl/neander/alu_op.txt
 #{top.tb_neander.u_neander.u_alu_2_mem.u_inner_alu.alu_op[2:0]} top.tb_neander.u_neander.u_alu_2_mem.u_inner_alu.alu_op[2] top.tb_neander.u_neander.u_alu_2_mem.u_inner_alu.alu_op[1] top.tb_neander.u_neander.u_alu_2_mem.u_inner_alu.alu_op[0]
+^2 /home/rafael/Desktop/unioeste/cc/ano-1/sd/aula-vhdl/neander/flags_nz.txt
 #{top.tb_neander.u_neander.u_pc_alu_2_sys.u_inner_uc.flags_nz[1:0]} top.tb_neander.u_neander.u_pc_alu_2_sys.u_inner_uc.flags_nz[1] top.tb_neander.u_neander.u_pc_alu_2_sys.u_inner_uc.flags_nz[0]
 @200
 -Memoria
@@ -67,5 +73,6 @@ top.tb_neander.u_neander.u_alu_2_mem.ac_nrw
 #{top.tb_neander.u_neander.u_mem_2_alu.u_inner_mem.ram[129][7:0]} top.tb_neander.u_neander.u_mem_2_alu.u_inner_mem.ram[129][7] top.tb_neander.u_neander.u_mem_2_alu.u_inner_mem.ram[129][6] top.tb_neander.u_neander.u_mem_2_alu.u_inner_mem.ram[129][5] top.tb_neander.u_neander.u_mem_2_alu.u_inner_mem.ram[129][4] top.tb_neander.u_neander.u_mem_2_alu.u_inner_mem.ram[129][3] top.tb_neander.u_neander.u_mem_2_alu.u_inner_mem.ram[129][2] top.tb_neander.u_neander.u_mem_2_alu.u_inner_mem.ram[129][1] top.tb_neander.u_neander.u_mem_2_alu.u_inner_mem.ram[129][0]
 #{top.tb_neander.u_neander.u_mem_2_alu.u_inner_mem.ram[130][7:0]} top.tb_neander.u_neander.u_mem_2_alu.u_inner_mem.ram[130][7] top.tb_neander.u_neander.u_mem_2_alu.u_inner_mem.ram[130][6] top.tb_neander.u_neander.u_mem_2_alu.u_inner_mem.ram[130][5] top.tb_neander.u_neander.u_mem_2_alu.u_inner_mem.ram[130][4] top.tb_neander.u_neander.u_mem_2_alu.u_inner_mem.ram[130][3] top.tb_neander.u_neander.u_mem_2_alu.u_inner_mem.ram[130][2] top.tb_neander.u_neander.u_mem_2_alu.u_inner_mem.ram[130][1] top.tb_neander.u_neander.u_mem_2_alu.u_inner_mem.ram[130][0]
 #{top.tb_neander.u_neander.u_mem_2_alu.u_inner_mem.ram[131][7:0]} top.tb_neander.u_neander.u_mem_2_alu.u_inner_mem.ram[131][7] top.tb_neander.u_neander.u_mem_2_alu.u_inner_mem.ram[131][6] top.tb_neander.u_neander.u_mem_2_alu.u_inner_mem.ram[131][5] top.tb_neander.u_neander.u_mem_2_alu.u_inner_mem.ram[131][4] top.tb_neander.u_neander.u_mem_2_alu.u_inner_mem.ram[131][3] top.tb_neander.u_neander.u_mem_2_alu.u_inner_mem.ram[131][2] top.tb_neander.u_neander.u_mem_2_alu.u_inner_mem.ram[131][1] top.tb_neander.u_neander.u_mem_2_alu.u_inner_mem.ram[131][0]
+#{top.tb_neander.u_neander.u_mem_2_alu.u_inner_mem.ram[132][7:0]} top.tb_neander.u_neander.u_mem_2_alu.u_inner_mem.ram[132][7] top.tb_neander.u_neander.u_mem_2_alu.u_inner_mem.ram[132][6] top.tb_neander.u_neander.u_mem_2_alu.u_inner_mem.ram[132][5] top.tb_neander.u_neander.u_mem_2_alu.u_inner_mem.ram[132][4] top.tb_neander.u_neander.u_mem_2_alu.u_inner_mem.ram[132][3] top.tb_neander.u_neander.u_mem_2_alu.u_inner_mem.ram[132][2] top.tb_neander.u_neander.u_mem_2_alu.u_inner_mem.ram[132][1] top.tb_neander.u_neander.u_mem_2_alu.u_inner_mem.ram[132][0]
 [pattern_trace] 1
 [pattern_trace] 0

@@ -21,7 +21,7 @@ begin
 	
 	rampW : process(NR_W, RST, ADDR, DATA)
 	type binary_file is file of character;
-	file load_file : binary_file open read_mode is "neanderram-ex01.mem";
+	file load_file : binary_file open read_mode is "neanderram-ex08.mem";
 	variable char : character;
 	begin
 		if (RST = '0' and RST'event) then

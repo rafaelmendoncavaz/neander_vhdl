@@ -1,91 +1,91 @@
 v 4
-file . "tb_neander.vhdl" "158158799eaab7e9cb4789b8bc514176273e70b7" "20260105122952.543":
-  entity tb_neander at 3( 160) + 0 on 2047;
-  architecture exec of tb_neander at 9( 249) + 0 on 2048;
-file . "reg8b.vhdl" "0557482bf7428138fbaefe79f36e1b8b27abf8da" "20260105122952.542":
-  entity reg_8b at 1( 0) + 0 on 2045;
-  architecture behavior of reg_8b at 14( 289) + 0 on 2046;
-file . "reg2b.vhdl" "5de5be2961c083aa29cff639c5aca51616f55dc1" "20260105122952.542":
-  entity reg_2b at 1( 0) + 0 on 2043;
-  architecture behavior of reg_2b at 14( 289) + 0 on 2044;
-file . "reg1b.vhdl" "0ba33f3f8df19ffe7785b294569108235796b4a5" "20260105122952.542":
-  entity reg_1b_base at 1( 0) + 0 on 2041;
-  architecture behavior of reg_1b_base at 14( 256) + 0 on 2042;
-file . "main_neander.vhdl" "fbbd62800c86722c240bdbf91662ec3759df1d96" "20260105122952.541":
-  entity main_neander at 1( 0) + 0 on 2037;
-  architecture interface of main_neander at 11( 165) + 0 on 2038;
-file . "main_mem.vhdl" "a62108c8aaf65e67a37e5a2b7e6e4fc900fe6f62" "20260105122952.540":
-  entity main_mem at 1( 0) + 0 on 2035;
-  architecture storage of main_mem at 17( 481) + 0 on 2036;
-file . "main_alu.vhdl" "2d73f20bb91c990918a8c02b7d015c9a66f0c625" "20260105122952.540":
-  entity main_alu at 1( 0) + 0 on 2031;
-  architecture math of main_alu at 16( 442) + 0 on 2032;
-file . "inner_as_ram.vhdl" "48d3eba3465fe8760ad6dfb9e7f1a57e3dbb6ed2" "20260105122952.538":
-  entity inner_mem at 2( 42) + 0 on 2027;
-  architecture behavior of inner_mem at 16( 332) + 0 on 2028;
-file . "inner_alu.vhdl" "9e7f6db04333f2241e13a902a4b6c466a0743b05" "20260105122952.536":
-  entity inner_alu at 1( 0) + 0 on 2025;
-  architecture behavior of inner_alu at 13( 309) + 0 on 2026;
-file . "ffd.vhdl" "e992583abef9b390d104f70bfa0de88ecc118b5d" "20260105122952.535":
-  entity ffd at 1( 0) + 0 on 2021;
-  architecture behavior of ffd at 13( 214) + 0 on 2022;
-file . "adder8b.vhdl" "d0565e33369d4e372fea07865d7ba713140c8600" "20260105122952.533":
-  entity adder_8b at 1( 0) + 0 on 2013;
-  architecture behavior of adder_8b at 14( 313) + 0 on 2014;
-file . "adder1b.vhdl" "d02c4c440faff93847c944c13e562abd942f0098" "20260105122952.533":
-  entity adder_1b at 1( 0) + 0 on 2011;
-  architecture behavior of adder_1b at 14( 257) + 0 on 2012;
-file . "counter.vhdl" "37a10773d6b9773296b00418de3a72582e53416f" "20260105122952.534":
-  entity counter at 1( 0) + 0 on 2017;
-  architecture counting of counter at 12( 215) + 0 on 2018;
-file . "counter_uc.vhdl" "41bed47c927e139ebd1b79c4679f16601f3b89ce" "20260105122952.533":
-  entity counter_uc at 1( 0) + 0 on 2015;
-  architecture cycles of counter_uc at 11( 208) + 0 on 2016;
-file . "decoder.vhdl" "757a15493a2d0a54fb168a799ec063bed7865473" "20260105122952.535":
-  entity decoder at 1( 0) + 0 on 2019;
-  architecture decode of decoder at 11( 211) + 0 on 2020;
-file . "ffjk.vhdl" "baa2a4af2beb9384cc0ed31b1bd3de99acc8755c" "20260105122952.535":
-  entity ffjk at 1( 0) + 0 on 2023;
-  architecture behavior of ffjk at 13( 216) + 0 on 2024;
-file . "inner_control.vhdl" "bc428c92357cc8ac43ef06d0e8b710b19958e5c8" "20260105122952.539":
-  entity inner_controller at 1( 0) + 0 on 2029;
-  architecture instr_controller of inner_controller at 14( 357) + 0 on 2030;
-file . "main_control.vhdl" "1a771b9f29f9911aa5584ee6a1d8b52ed7140da1" "20260105122952.540":
-  entity main_controller at 1( 0) + 0 on 2033;
-  architecture control of main_controller at 14( 354) + 0 on 2034;
-file . "main_program_counter.vhdl" "a164787d63e368b3058423b194fa335f4e2766c5" "20260105122952.541":
-  entity main_program_counter at 1( 0) + 0 on 2039;
-  architecture counter of main_program_counter at 14( 344) + 0 on 2040;
-file . "uc_add.vhdl" "345eaa2e0ba630562bd11dc2d00451e1bd08f8d9" "20260105122952.543":
-  entity cu_add at 1( 0) + 0 on 2049;
-  architecture add_op of cu_add at 11( 194) + 0 on 2050;
-file . "uc_and.vhdl" "ab3af69f48c0e16310103ccb278226cc41c78de5" "20260105122952.544":
-  entity cu_and at 1( 0) + 0 on 2051;
-  architecture and_op of cu_and at 11( 194) + 0 on 2052;
-file . "uc_hlt.vhdl" "4f43d92d06cd52600faad42c3e6ac8c120127729" "20260105122952.544":
-  entity cu_hlt at 1( 0) + 0 on 2053;
-  architecture halt of cu_hlt at 11( 194) + 0 on 2054;
-file . "uc_jmp.vhdl" "9999c76f7549e0ec0f6c929c17b183b9b801e5e2" "20260105122952.545":
-  entity cu_jmp at 1( 0) + 0 on 2055;
-  architecture jump of cu_jmp at 11( 194) + 0 on 2056;
-file . "uc_jn.vhdl" "9547ba03dac02b0083252b0dce16f53c54fb31c4" "20260105122952.545":
-  entity cu_jn at 1( 0) + 0 on 2057;
-  architecture jump_negative of cu_jn at 12( 244) + 0 on 2058;
-file . "uc_jz.vhdl" "507a28ec4ca63ee51e762e9a2384c4e4f18b29c1" "20260105122952.546":
-  entity cu_jz at 1( 0) + 0 on 2059;
-  architecture jump_zero of cu_jz at 12( 244) + 0 on 2060;
-file . "uc_lda.vhdl" "cf029073770c7414b3da9ed647303783858d8873" "20260105122952.546":
-  entity cu_lda at 1( 0) + 0 on 2061;
-  architecture load of cu_lda at 11( 194) + 0 on 2062;
-file . "uc_nop.vhdl" "a5c21f8986eb44db77a54006333179a51804e967" "20260105122952.547":
-  entity cu_nop at 1( 0) + 0 on 2063;
-  architecture no_operation of cu_nop at 11( 194) + 0 on 2064;
-file . "uc_not.vhdl" "99c3c0b14ed269e2cb27f1cf3a40d6eb947ec240" "20260105122952.547":
-  entity cu_not at 1( 0) + 0 on 2065;
-  architecture not_op of cu_not at 11( 194) + 0 on 2066;
-file . "uc_or.vhdl" "d7c9a40501d8585167dbfbe478a41fba091bd822" "20260105122952.548":
-  entity cu_or at 1( 0) + 0 on 2067;
-  architecture or_op of cu_or at 11( 193) + 0 on 2068;
-file . "uc_sta.vhdl" "166b7356f6bce9171b0aaf0ee72ad3037f9d1247" "20260105122952.548":
-  entity cu_sta at 1( 0) + 0 on 2069;
-  architecture store of cu_sta at 11( 194) + 0 on 2070;
+file . "uc_sta.vhdl" "166b7356f6bce9171b0aaf0ee72ad3037f9d1247" "20260107123534.683":
+  entity cu_sta at 1( 0) + 0 on 4409;
+  architecture store of cu_sta at 11( 194) + 0 on 4410;
+file . "uc_or.vhdl" "d7c9a40501d8585167dbfbe478a41fba091bd822" "20260107123534.683":
+  entity cu_or at 1( 0) + 0 on 4407;
+  architecture or_op of cu_or at 11( 193) + 0 on 4408;
+file . "uc_not.vhdl" "99c3c0b14ed269e2cb27f1cf3a40d6eb947ec240" "20260107123534.683":
+  entity cu_not at 1( 0) + 0 on 4405;
+  architecture not_op of cu_not at 11( 194) + 0 on 4406;
+file . "uc_nop.vhdl" "a5c21f8986eb44db77a54006333179a51804e967" "20260107123534.683":
+  entity cu_nop at 1( 0) + 0 on 4403;
+  architecture no_operation of cu_nop at 11( 194) + 0 on 4404;
+file . "uc_lda.vhdl" "cf029073770c7414b3da9ed647303783858d8873" "20260107123534.683":
+  entity cu_lda at 1( 0) + 0 on 4401;
+  architecture load of cu_lda at 11( 194) + 0 on 4402;
+file . "uc_jz.vhdl" "af3f18f175a92620e983f828129c3dea1860f2f3" "20260107123534.683":
+  entity cu_jz at 1( 0) + 0 on 4399;
+  architecture jump_zero of cu_jz at 12( 244) + 0 on 4400;
+file . "uc_jn.vhdl" "bea28d59127854dac3e2017829d3c7286fe3de40" "20260107123534.682":
+  entity cu_jn at 1( 0) + 0 on 4397;
+  architecture jump_negative of cu_jn at 12( 244) + 0 on 4398;
+file . "uc_jmp.vhdl" "c04b728be70f06c8133cb2a4ec3791c3606ea699" "20260107123534.682":
+  entity cu_jmp at 1( 0) + 0 on 4395;
+  architecture jump of cu_jmp at 11( 194) + 0 on 4396;
+file . "uc_hlt.vhdl" "4f43d92d06cd52600faad42c3e6ac8c120127729" "20260107123534.682":
+  entity cu_hlt at 1( 0) + 0 on 4393;
+  architecture halt of cu_hlt at 11( 194) + 0 on 4394;
+file . "uc_and.vhdl" "ab3af69f48c0e16310103ccb278226cc41c78de5" "20260107123534.682":
+  entity cu_and at 1( 0) + 0 on 4391;
+  architecture and_op of cu_and at 11( 194) + 0 on 4392;
+file . "uc_add.vhdl" "345eaa2e0ba630562bd11dc2d00451e1bd08f8d9" "20260107123534.682":
+  entity cu_add at 1( 0) + 0 on 4389;
+  architecture add_op of cu_add at 11( 194) + 0 on 4390;
+file . "main_program_counter.vhdl" "a164787d63e368b3058423b194fa335f4e2766c5" "20260107123534.681":
+  entity main_program_counter at 1( 0) + 0 on 4379;
+  architecture counter of main_program_counter at 14( 344) + 0 on 4380;
+file . "main_control.vhdl" "1a771b9f29f9911aa5584ee6a1d8b52ed7140da1" "20260107123534.681":
+  entity main_controller at 1( 0) + 0 on 4373;
+  architecture control of main_controller at 14( 354) + 0 on 4374;
+file . "inner_control.vhdl" "bc428c92357cc8ac43ef06d0e8b710b19958e5c8" "20260107123534.681":
+  entity inner_controller at 1( 0) + 0 on 4369;
+  architecture instr_controller of inner_controller at 14( 357) + 0 on 4370;
+file . "ffjk.vhdl" "baa2a4af2beb9384cc0ed31b1bd3de99acc8755c" "20260107123534.679":
+  entity ffjk at 1( 0) + 0 on 4363;
+  architecture behavior of ffjk at 13( 216) + 0 on 4364;
+file . "decoder.vhdl" "757a15493a2d0a54fb168a799ec063bed7865473" "20260107123534.679":
+  entity decoder at 1( 0) + 0 on 4359;
+  architecture decode of decoder at 11( 211) + 0 on 4360;
+file . "counter_uc.vhdl" "41bed47c927e139ebd1b79c4679f16601f3b89ce" "20260107123534.679":
+  entity counter_uc at 1( 0) + 0 on 4355;
+  architecture cycles of counter_uc at 11( 208) + 0 on 4356;
+file . "counter.vhdl" "37a10773d6b9773296b00418de3a72582e53416f" "20260107123534.679":
+  entity counter at 1( 0) + 0 on 4357;
+  architecture counting of counter at 12( 215) + 0 on 4358;
+file . "adder1b.vhdl" "d02c4c440faff93847c944c13e562abd942f0098" "20260107123534.678":
+  entity adder_1b at 1( 0) + 0 on 4351;
+  architecture behavior of adder_1b at 14( 257) + 0 on 4352;
+file . "adder8b.vhdl" "d0565e33369d4e372fea07865d7ba713140c8600" "20260107123534.678":
+  entity adder_8b at 1( 0) + 0 on 4353;
+  architecture behavior of adder_8b at 14( 313) + 0 on 4354;
+file . "ffd.vhdl" "e992583abef9b390d104f70bfa0de88ecc118b5d" "20260107123534.679":
+  entity ffd at 1( 0) + 0 on 4361;
+  architecture behavior of ffd at 13( 214) + 0 on 4362;
+file . "inner_alu.vhdl" "9e7f6db04333f2241e13a902a4b6c466a0743b05" "20260107123534.679":
+  entity inner_alu at 1( 0) + 0 on 4365;
+  architecture behavior of inner_alu at 13( 309) + 0 on 4366;
+file . "inner_as_ram.vhdl" "a1e899decb16fe973a8fbc43aeb5d0627472792d" "20260107123534.680":
+  entity inner_mem at 2( 42) + 0 on 4367;
+  architecture behavior of inner_mem at 16( 332) + 0 on 4368;
+file . "main_alu.vhdl" "2d73f20bb91c990918a8c02b7d015c9a66f0c625" "20260107123534.681":
+  entity main_alu at 1( 0) + 0 on 4371;
+  architecture math of main_alu at 16( 442) + 0 on 4372;
+file . "main_mem.vhdl" "a62108c8aaf65e67a37e5a2b7e6e4fc900fe6f62" "20260107123534.681":
+  entity main_mem at 1( 0) + 0 on 4375;
+  architecture storage of main_mem at 17( 481) + 0 on 4376;
+file . "main_neander.vhdl" "fbbd62800c86722c240bdbf91662ec3759df1d96" "20260107123534.681":
+  entity main_neander at 1( 0) + 0 on 4377;
+  architecture interface of main_neander at 11( 165) + 0 on 4378;
+file . "reg1b.vhdl" "0ba33f3f8df19ffe7785b294569108235796b4a5" "20260107123534.681":
+  entity reg_1b_base at 1( 0) + 0 on 4381;
+  architecture behavior of reg_1b_base at 14( 256) + 0 on 4382;
+file . "reg2b.vhdl" "5de5be2961c083aa29cff639c5aca51616f55dc1" "20260107123534.682":
+  entity reg_2b at 1( 0) + 0 on 4383;
+  architecture behavior of reg_2b at 14( 289) + 0 on 4384;
+file . "reg8b.vhdl" "0557482bf7428138fbaefe79f36e1b8b27abf8da" "20260107123534.682":
+  entity reg_8b at 1( 0) + 0 on 4385;
+  architecture behavior of reg_8b at 14( 289) + 0 on 4386;
+file . "tb_neander.vhdl" "158158799eaab7e9cb4789b8bc514176273e70b7" "20260107123534.682":
+  entity tb_neander at 3( 160) + 0 on 4387;
+  architecture exec of tb_neander at 9( 249) + 0 on 4388;
