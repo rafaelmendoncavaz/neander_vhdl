@@ -17,27 +17,21 @@ architecture EXEC of TB_NEANDER is
     end component;
 
     signal CLK : std_logic := '0';
-    signal RST : std_logic;
+    signal RST : std_logic := '1';
 
 begin
-    -- CLK         <= NOT(CLK) after CLK_PERIOD / 2;
+    CLK         <= NOT(CLK) after CLK_PERIOD / 2;
     U_NEANDER   : MAIN_NEANDER port map(CLK, RST);
 
     NEANDER : process
     begin
         -- reset inicial
         RST <= '0';
-        wait for CLK_PERIOD;
+        wait for CLK_PERIOD / 2;
         RST <= '1';
 
         wait;
 
     end process NEANDER;
-
-    CLK_PROCESS : process
-    begin
-        CLK <= NOT(CLK);
-        wait for CLK_PERIOD / 2;
-    end process CLK_PROCESS;
 
 end architecture EXEC;
